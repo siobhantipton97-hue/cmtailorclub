@@ -294,9 +294,11 @@ nav a {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* FADE-IN ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .fade-in.visible {
@@ -372,26 +374,28 @@ nav a {
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-
+  // Find all elements with the fade-in class
   const faders = document.querySelectorAll('.fade-in');
 
+  // Only animate when at least 50% of the element is visible
   const appearOptions = {
-    threshold: 0.25
+    threshold: 0.5
   };
 
   const appearOnScroll = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
   }, appearOptions);
 
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
   });
-
 });
+</script>
 </script>
 
 </body>
