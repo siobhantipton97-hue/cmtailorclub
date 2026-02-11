@@ -335,6 +335,36 @@ nav a {
 .testimonial.active {
   display: block;
 }
+    /* TESTIMONIAL SECTION */
+.testimonials {
+  padding: 100px 10%;
+  background: #111;
+  text-align: center;
+}
+
+.testimonial-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.testimonial h4 {
+  margin-top: 25px;
+  font-weight: 400;
+  color: #d4af37;
+  font-size: 16px;
+}
+
+.testimonial.active {
+  display: block;
+}
 </style>
 </head>
 
@@ -455,6 +485,19 @@ function showNextTestimonial() {
 }
 
 setInterval(showNextTestimonial, 4000);
+    <script>
+let testimonials = document.querySelectorAll(".testimonial");
+let currentIndex = 0;
+
+function showNextTestimonial() {
+  testimonials[currentIndex].classList.remove("active");
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  testimonials[currentIndex].classList.add("active");
+}
+
+// Start rotating
+setInterval(showNextTestimonial, 4000);
+</script>
 </script>
 
 </body>
