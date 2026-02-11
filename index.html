@@ -290,8 +290,13 @@ nav a {
     /* FADE-IN ANIMATION */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease-out;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .fade-in.visible {
@@ -366,10 +371,12 @@ nav a {
 </footer>
 
 <script>
+document.addEventListener("DOMContentLoaded", function() {
+
   const faders = document.querySelectorAll('.fade-in');
 
   const appearOptions = {
-    threshold: 0.2
+    threshold: 0.25
   };
 
   const appearOnScroll = new IntersectionObserver(function(entries, observer) {
@@ -383,6 +390,8 @@ nav a {
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
   });
+
+});
 </script>
 
 </body>
