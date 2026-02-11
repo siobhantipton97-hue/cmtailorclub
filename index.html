@@ -1,10 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chiang Mai Tailor Club</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f8f8;
+  color: #222;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  background: #222;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #c9a227;
+}
+
+.hero {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: white;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #c9a227;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background: #a8851d;
+}
+
+.section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+</style>
 </head>
+
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is my first free HTML website.</p>
+
+<header>
+  <h1>Chiang Mai Tailor Club</h1>
+  <p>Premium Custom Tailoring in Thailand</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Services</a>
+  <a href="#">Gallery</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Perfect Fit. Exceptional Craftsmanship.</h2>
+  <p>Custom suits, dresses, shirts and alterations made to measure.</p>
+  <a href="#" class="button">Book Appointment</a>
+</section>
+
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Custom Suits</h3>
+      <p>Handcrafted tailored suits with premium fabrics.</p>
+    </div>
+    <div class="card">
+      <h3>Custom Dresses</h3>
+      <p>Elegant dresses designed and fitted to perfection.</p>
+    </div>
+    <div class="card">
+      <h3>Alterations</h3>
+      <p>Professional adjustments for the perfect fit.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Chiang Mai Tailor Club | Chiang Mai, Thailand</p>
+</footer>
+
 </body>
 </html>
