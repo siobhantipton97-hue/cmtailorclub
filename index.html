@@ -160,6 +160,54 @@ footer {
     padding: 12px 20px;
   }
 }
+  /* REVIEWS SECTION */
+
+.reviews {
+  background-color: #111;
+  text-align: center;
+}
+
+.review-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto 0 auto;
+  overflow: hidden;
+}
+
+.review {
+  display: none;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.review.active {
+  display: block;
+}
+
+.review h4 {
+  margin-top: 20px;
+  color: #c6a75e;
+  font-weight: 500;
+}
+
+.review-dots {
+  margin-top: 20px;
+}
+
+.review-dots span {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  display: inline-block;
+  background-color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.review-dots .active-dot {
+  background-color: #c6a75e;
+}
 </style>
 </head>
 
@@ -213,6 +261,33 @@ footer {
     <h2>Visit Our Tailor Studio in Chiang Mai</h2>
     <div class="map-container">
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.3491905175065!2d98.99775117347278!3d18.78258536112171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3be077851fcf%3A0x86fa0102ffd290c4!2sThe%20Best%20Custom%20Tailor!5e0!3m2!1sen!2sth!4v1770888230660!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+<section class="reviews">
+  <div class="container">
+    <h2>Client Reviews</h2>
+
+    <div class="review-slider">
+      <div class="review active">
+        <p>"The best tailor in Chiang Mai. My custom suit fits perfectly and the quality is outstanding. Highly recommend for anyone visiting Thailand."</p>
+        <h4>— James R.</h4>
+      </div>
+
+      <div class="review">
+        <p>"I had my wedding suit made here and it was exceptional. Professional service and excellent craftsmanship."</p>
+        <h4>— Daniel M.</h4>
+      </div>
+
+      <div class="review">
+        <p>"Amazing bespoke tailoring experience. The fitting process was detailed and the final suit exceeded expectations."</p>
+        <h4>— Michael T.</h4>
+      </div>
+    </div>
+
+    <div class="review-dots">
+      <span onclick="currentReview(0)" class="active-dot"></span>
+      <span onclick="currentReview(1)"></span>
+      <span onclick="currentReview(2)"></span>
     </div>
   </div>
 </section>
