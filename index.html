@@ -1,271 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Luxury Bespoke Tailor in Chiang Mai | Chiang Mai Tailor Club</title>
+<title>Best Tailor in Chiang Mai | Luxury Bespoke Suits | CM Tailor Club</title>
 
-<meta name="description" content="Luxury bespoke tailor in Chiang Mai specialising in custom suits, wedding suits and refined business tailoring. Experience precision craftsmanship at Chiang Mai Tailor Club.">
+<meta name="description" content="Recognised as the Best Tailor in Chiang Mai. Luxury bespoke suits, wedding tailoring, and custom formalwear crafted with precision. Located in Chiang Mai, Thailand.">
 
 <link rel="canonical" href="https://siobhantipton97-hue.github.io/">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<meta property="og:title" content="Best Tailor in Chiang Mai | CM Tailor Club">
+<meta property="og:description" content="Luxury bespoke suits and custom tailoring in Chiang Mai. Experience premium craftsmanship and personal fitting.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://siobhantipton97-hue.github.io/">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
 
-body{
-  font-family:'Inter',sans-serif;
-  background:#0c0c0c;
-  color:#eaeaea;
-  line-height:1.8;
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+background: #f8f6f2;
+color: #111;
+line-height: 1.7;
 }
 
-.container{
-  width:90%;
-  max-width:1200px;
-  margin:auto;
+header {
+padding: 80px 20px;
+text-align: center;
+background: #111;
+color: #fff;
 }
 
-h1,h2,h3{
-  font-family:'Cormorant Garamond',serif;
-  font-weight:600;
-  letter-spacing:1px;
+h1 {
+font-family: 'Playfair Display', serif;
+font-size: 42px;
+margin-bottom: 20px;
 }
 
-section{
-  padding:120px 0;
+h2 {
+font-family: 'Playfair Display', serif;
+font-size: 30px;
+margin-top: 60px;
 }
 
-nav{
-  position:fixed;
-  width:100%;
-  top:0;
-  padding:20px 0;
-  background:rgba(0,0,0,0.7);
-  backdrop-filter:blur(6px);
-  z-index:1000;
+.container {
+max-width: 1100px;
+margin: auto;
+padding: 40px 20px;
 }
 
-nav .container{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+.btn {
+display: inline-block;
+background: #c6a75e;
+color: #111;
+padding: 12px 30px;
+text-decoration: none;
+font-weight: 500;
+margin-top: 20px;
 }
 
-.logo{
-  font-size:20px;
-  letter-spacing:2px;
+section {
+margin-bottom: 60px;
 }
 
-nav a{
-  color:#eaeaea;
-  text-decoration:none;
-  margin-left:30px;
-  font-size:13px;
-  text-transform:uppercase;
-  letter-spacing:2px;
+.map iframe {
+width: 100%;
+height: 400px;
+border: 0;
 }
 
-.hero{
-  height:100vh;
-  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-  url('hero.jpg') center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  text-align:center;
-  padding-top:80px;
+.reviews {
+background: #fff;
+padding: 40px;
+border-radius: 6px;
 }
 
-.hero h1{font-size:60px;margin-bottom:25px;}
-.hero p{font-size:20px;color:#ccc;margin-bottom:40px;}
-
-.btn{
-  background:#b89c5a;
-  color:#000;
-  padding:16px 36px;
-  text-decoration:none;
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:13px;
+footer {
+background: #111;
+color: #fff;
+text-align: center;
+padding: 40px 20px;
 }
 
-.services{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:60px;
-  margin-top:80px;
-  text-align:center;
+@media (max-width: 768px) {
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
 }
 
-.service-box p{color:#aaa;}
-
-.dark-section{background:#111;}
-
-.review{
-  display:none;
-  text-align:center;
-  max-width:800px;
-  margin:40px auto;
-  font-size:20px;
-}
-
-.review.active{display:block;}
-
-.stars{
-  color:#d4af37;
-  margin-bottom:20px;
-  letter-spacing:4px;
-}
-
-.review h4{
-  margin-top:20px;
-  color:#b89c5a;
-  font-size:14px;
-  letter-spacing:2px;
-}
-
-.review-dots{
-  text-align:center;
-}
-
-.review-dots span{
-  height:8px;
-  width:8px;
-  background:#555;
-  border-radius:50%;
-  display:inline-block;
-  margin:5px;
-  cursor:pointer;
-}
-
-.review-dots .active-dot{background:#b89c5a;}
-
-footer{
-  text-align:center;
-  padding:60px 20px;
-  background:#000;
-  color:#777;
-  font-size:13px;
-}
-
-@media(max-width:900px){
-  .hero h1{font-size:38px;}
-  .services{grid-template-columns:1fr;}
-  section{padding:80px 0;}
-}
 </style>
-</head>
 
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ClothingStore",
+"name": "CM Tailor Club",
+"description": "Luxury bespoke tailor in Chiang Mai specialising in custom suits and wedding tailoring.",
+"areaServed": "Chiang Mai, Thailand",
+"address": {
+  "@type": "PostalAddress",
+  "streetAddress": "149, Anusan Market, 12 Changklan Rd, Tambon Chang Khlan, Mueang Chiang Mai District",
+  "addressLocality": "Chiang Mai",
+  "postalCode": "50100",
+  "addressCountry": "TH"
+},
+"telephone": "+66993938718",
+"url": "https://siobhantipton97-hue.github.io/"
+}
+</script>
+
+</head>
 <body>
 
-<nav>
-  <div class="container">
-    <div class="logo">CHIANG MAI TAILOR CLUB</div>
-    <div>
-      <a href="#services">Services</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="container">
-    <h1>Luxury Bespoke Tailoring in Chiang Mai</h1>
-    <p>Precision-crafted custom suits and refined wedding tailoring for discerning clients in Thailand.</p>
-    <a href="#contact" class="btn">Book Consultation</a>
-  </div>
+<header>
+<h1>Best Tailor in Chiang Mai – Luxury Bespoke Suits</h1>
+<p>Precision. Craftsmanship. Distinction.</p>
+<a href="#contact" class="btn">Book a Private Fitting</a>
 </header>
 
-<section id="services">
-  <div class="container">
-    <h2 style="text-align:center;">Our Craft</h2>
-    <div class="services">
-      <div class="service-box">
-        <h3>Custom Suits</h3>
-        <p>Individually tailored garments crafted with premium fabrics.</p>
-      </div>
-      <div class="service-box">
-        <h3>Wedding Tailoring</h3>
-        <p>Timeless wedding suits designed with elegance.</p>
-      </div>
-      <div class="service-box">
-        <h3>Business Attire</h3>
-        <p>Executive tailoring for modern professionals.</p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+
+<section>
+<h2>Luxury Bespoke Suits in Chiang Mai</h2>
+<p>At CM Tailor Club, we specialise in high-end bespoke tailoring in Chiang Mai. Our master tailors craft custom suits, wedding attire, and formalwear using premium fabrics sourced globally and locally. Every garment is made to measure, ensuring exceptional fit and refined elegance.</p>
 </section>
 
-<section id="reviews" class="dark-section">
-  <div class="container">
-    <h2 style="text-align:center;">Client Testimonials</h2>
+<section>
+<h2>Why We Are Recognised as the Best Tailor in Chiang Mai</h2>
+<p>Located in the heart of Chiang Mai, we serve clients from Nimman, Old City, Night Bazaar, and international visitors seeking superior craftsmanship. Our reputation is built on precision tailoring, personalised consultations, and luxury finishing techniques that elevate every garment.</p>
+<p>Whether you are visiting Chiang Mai for a wedding, business trip, or special occasion, we provide a seamless bespoke experience from consultation to final fitting.</p>
+</section>
 
-    <div class="review active">
-      <div class="stars">★★★★★</div>
-      <p>"Exceptional craftsmanship and attention to detail."</p>
-      <h4>— James W.</h4>
-    </div>
+<section class="reviews">
+<h2>Client Reviews</h2>
+<p>★★★★★ – “The best tailor in Chiang Mai. Exceptional quality and service.”</p>
+<p>★★★★★ – “My wedding suit was perfectly crafted. Highly recommended.”</p>
+<p>★★★★★ – “Luxury experience from start to finish.”</p>
+</section>
 
-    <div class="review">
-      <div class="stars">★★★★★</div>
-      <p>"My wedding suit was flawless and beautifully fitted."</p>
-      <h4>— Daniel M.</h4>
-    </div>
-
-    <div class="review">
-      <div class="stars">★★★★★</div>
-      <p>"Outstanding bespoke experience from start to finish."</p>
-      <h4>— Michael T.</h4>
-    </div>
-
-    <div class="review-dots">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
+<section class="map">
+<h2>Visit Our Chiang Mai Tailor Studio</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.3491905175065!2d98.99775117347278!3d18.78258536112171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3be077851fcf%3A0x86fa0102ffd290c4!2sThe%20Best%20Custom%20Tailor!5e0!3m2!1sen!2sth!4v1770888230660!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
 <section id="contact">
-  <div class="container" style="text-align:center;">
-    <h2>Book Your Private Fitting</h2>
-    <p style="margin:30px 0;color:#aaa;">CMtailorclub@gmail.com</p>
-    <a href="https://wa.me/66993938718" class="btn">WhatsApp Consultation</a>
-  </div>
+<h2>Book Your Bespoke Consultation</h2>
+<p>Email: CMtailorclub@gmail.com</p>
+<p>Phone: +66993938718</p>
+<a href="mailto:CMtailorclub@gmail.com" class="btn">Email Us</a>
 </section>
 
+</div>
+
 <footer>
-© 2026 Chiang Mai Tailor Club — Luxury Bespoke Tailoring
+<p>© 2026 CM Tailor Club – Best Tailor in Chiang Mai</p>
 </footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  let reviewIndex=0;
-  const reviews=document.querySelectorAll(".review");
-  const dots=document.querySelectorAll(".review-dots span");
-
-  function showReview(index){
-    reviews.forEach(r=>r.classList.remove("active"));
-    dots.forEach(d=>d.classList.remove("active-dot"));
-    reviews[index].classList.add("active");
-    dots[index].classList.add("active-dot");
-  }
-
-  dots.forEach((dot,i)=>{
-    dot.addEventListener("click",()=>{reviewIndex=i;showReview(i);});
-  });
-
-  setInterval(()=>{
-    reviewIndex=(reviewIndex+1)%reviews.length;
-    showReview(reviewIndex);
-  },5000);
-
-  showReview(0);
-});
-</script>
 
 </body>
 </html>
