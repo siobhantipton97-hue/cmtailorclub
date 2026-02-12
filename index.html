@@ -305,6 +305,34 @@ footer {
 <footer>
   © 2026 Chiang Mai Tailor Club | Luxury Bespoke Tailor in Chiang Mai
 </footer>
+<script>
+let reviewIndex = 0;
+const reviews = document.querySelectorAll(".review");
+const dots = document.querySelectorAll(".review-dots span");
 
+function showReview(index) {
+  reviews.forEach((review, i) => {
+    review.classList.remove("active");
+    dots[i].classList.remove("active-dot");
+  });
+  reviews[index].classList.add("active");
+  dots[index].classList.add("active-dot");
+}
+
+function currentReview(index) {
+  reviewIndex = index;
+  showReview(reviewIndex);
+}
+
+function autoSlide() {
+  reviewIndex++;
+  if (reviewIndex >= reviews.length) {
+    reviewIndex = 0;
+  }
+  showReview(reviewIndex);
+}
+
+setInterval(autoSlide, 5000);
+</script>
 </body>
 </html>
