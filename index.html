@@ -5,20 +5,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Best Tailor in Chiang Mai | Luxury Bespoke Suits | CM Tailor Club</title>
+<title>Best Tailor in Chiang Mai | CM Tailor Club | Luxury Bespoke Suits</title>
 
-<meta name="description" content="Recognised as the Best Tailor in Chiang Mai. Luxury bespoke suits, wedding tailoring, and custom formalwear crafted with precision in Chiang Mai, Thailand.">
+<meta name="description" content="CM Tailor Club is recognised as the Best Tailor in Chiang Mai. Luxury bespoke suits, wedding tailoring and custom formalwear crafted with precision.">
 
 <link rel="canonical" href="https://siobhantipton97-hue.github.io/">
 
 <meta property="og:title" content="Best Tailor in Chiang Mai | CM Tailor Club">
-<meta property="og:description" content="Luxury bespoke suits and custom tailoring in Chiang Mai. Book your private fitting today.">
+<meta property="og:description" content="Luxury bespoke tailoring in Chiang Mai. Book your private fitting today.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://siobhantipton97-hue.github.io/">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+
+html {
+scroll-behavior: smooth;
+}
 
 body {
 margin: 0;
@@ -28,17 +32,58 @@ color: #111;
 line-height: 1.8;
 }
 
-/* HERO SECTION */
+/* NAVIGATION */
+
+nav {
+position: fixed;
+top: 0;
+width: 100%;
+background: rgba(0,0,0,0.9);
+padding: 18px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 1000;
+}
+
+.logo {
+font-family: 'Playfair Display', serif;
+color: #fff;
+font-size: 22px;
+letter-spacing: 1px;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 25px;
+margin: 0;
+padding: 0;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-size: 14px;
+font-weight: 400;
+}
+
+nav a:hover {
+color: #c6a75e;
+}
+
+/* HERO */
 
 .hero {
 position: relative;
-height: 95vh;
+height: 100vh;
 background: url('hero.jpg') center center/cover no-repeat;
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
 color: white;
+margin-top: 70px;
 }
 
 .hero-overlay {
@@ -62,7 +107,6 @@ margin-bottom: 20px;
 
 .hero p {
 font-size: 20px;
-font-weight: 300;
 }
 
 /* BUTTON */
@@ -71,23 +115,23 @@ font-weight: 300;
 display: inline-block;
 background: #c6a75e;
 color: #111;
-padding: 14px 32px;
+padding: 14px 30px;
 text-decoration: none;
 font-weight: 500;
 margin-top: 25px;
-transition: 0.3s ease;
+transition: 0.3s;
 }
 
 .btn:hover {
 background: #b59445;
 }
 
-/* CONTAINER */
+/* CONTENT */
 
 .container {
 max-width: 1100px;
 margin: auto;
-padding: 80px 20px;
+padding: 100px 20px;
 }
 
 h2 {
@@ -97,13 +141,11 @@ margin-bottom: 20px;
 }
 
 section {
-margin-bottom: 80px;
+margin-bottom: 100px;
 }
 
-/* REVIEWS */
-
 .reviews {
-background: #fff;
+background: white;
 padding: 50px;
 border-radius: 8px;
 box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -126,7 +168,7 @@ text-align: center;
 padding: 40px 20px;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 
 .whatsapp-float {
 position: fixed;
@@ -146,10 +188,28 @@ z-index: 999;
 /* MOBILE */
 
 @media (max-width: 768px) {
-.hero h1 { font-size: 32px; }
+
+nav {
+flex-direction: column;
+gap: 10px;
+padding: 15px;
+}
+
+nav ul {
+flex-wrap: wrap;
+justify-content: center;
+gap: 15px;
+}
+
+.hero h1 { font-size: 30px; }
 .hero p { font-size: 16px; }
+
 h2 { font-size: 24px; }
-.container { padding: 60px 20px; }
+
+.container {
+padding: 80px 20px;
+}
+
 }
 
 </style>
@@ -159,8 +219,6 @@ h2 { font-size: 24px; }
 "@context": "https://schema.org",
 "@type": "ClothingStore",
 "name": "CM Tailor Club",
-"description": "Luxury bespoke tailor in Chiang Mai specialising in custom suits and wedding tailoring.",
-"areaServed": "Chiang Mai, Thailand",
 "address": {
   "@type": "PostalAddress",
   "streetAddress": "149, Anusan Market, 12 Changklan Rd, Tambon Chang Khlan, Mueang Chiang Mai District",
@@ -176,39 +234,47 @@ h2 { font-size: 24px; }
 </head>
 <body>
 
-<!-- HERO -->
+<nav>
+<div class="logo">CM Tailor Club</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#location">Location</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
 <section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Best Tailor in Chiang Mai – Luxury Bespoke Suits</h1>
-    <p>Precision Craftsmanship in the Heart of Chiang Mai</p>
-    <a href="#contact" class="btn">Book a Private Fitting</a>
-  </div>
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1>Best Tailor in Chiang Mai – Luxury Bespoke Suits</h1>
+<p>Refined Craftsmanship. Timeless Design.</p>
+<a href="#contact" class="btn">Book a Private Fitting</a>
+</div>
 </section>
 
 <div class="container">
 
-<section>
-<h2>Luxury Bespoke Suits in Chiang Mai</h2>
-<p>At CM Tailor Club, we are proud to be recognised as the best tailor in Chiang Mai. Our master craftsmen specialise in bespoke suits, wedding attire, and custom formalwear tailored to perfection. Each garment is made-to-measure using premium fabrics and traditional hand-finishing techniques.</p>
+<section id="about">
+<h2>About CM Tailor Club</h2>
+<p>CM Tailor Club is recognised as one of the best tailors in Chiang Mai, specialising in luxury bespoke suits, wedding tailoring, and custom formalwear. Every garment is crafted with precision, ensuring exceptional fit and elegance.</p>
 </section>
 
-<section>
-<h2>Why We Are Rated the Best Tailor in Chiang Mai</h2>
-<p>Located at Anusan Market on Changklan Road, we serve clients from Old City, Nimman, Night Bazaar, and international visitors seeking refined tailoring. Our personalised consultation process ensures flawless fit, superior structure, and timeless design.</p>
-<p>Whether you require a business suit, wedding tuxedo, or custom formalwear, we deliver a luxury experience from first fitting to final presentation.</p>
+<section id="services">
+<h2>Luxury Tailoring Services in Chiang Mai</h2>
+<p>We create custom business suits, wedding tuxedos, bespoke shirts, and formalwear tailored to your exact measurements. Located at Anusan Market on Changklan Road, we serve both local clients and international visitors.</p>
 </section>
 
-<section class="reviews">
+<section id="reviews" class="reviews">
 <h2>Client Reviews</h2>
-<p>★★★★★ – “The best tailor in Chiang Mai. Exceptional quality and service.”</p>
-<p>★★★★★ – “My wedding suit was perfectly crafted. Highly recommended.”</p>
-<p>★★★★★ – “Luxury experience from start to finish.”</p>
+<p>★★★★★ – “The best tailor in Chiang Mai. Exceptional quality.”</p>
+<p>★★★★★ – “Perfect wedding suit and amazing service.”</p>
+<p>★★★★★ – “True luxury craftsmanship.”</p>
 </section>
 
-<section class="map">
-<h2>Visit Our Chiang Mai Tailor Studio</h2>
+<section id="location" class="map">
+<h2>Visit Our Chiang Mai Studio</h2>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.3491905175065!2d98.99775117347278!3d18.78258536112171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3be077851fcf%3A0x86fa0102ffd290c4!2sThe%20Best%20Custom%20Tailor!5e0!3m2!1sen!2sth!4v1770888230660!5m2!1sen!2sth" loading="lazy"></iframe>
 </section>
 
